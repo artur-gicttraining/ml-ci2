@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-Training accuracy: 100.0
-Test accuracy: 58.75
-=======
 Training accuracy: 57.77951524628616
 Test accuracy: 52.1875
->>>>>>> reduce-overfitting
