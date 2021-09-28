@@ -5,7 +5,7 @@ wines.columns = wines.columns.str.replace(" ", "_")
 
 # Split dataset into features and target and intro training and test sets
 from sklearn.model_selection import train_test_split
-X = wines.loc[:, ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'alcohol']]
+X = wines.loc[:, ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'alcohol', 'residual_sugar']]
 y = wines.loc[:, 'quality']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
