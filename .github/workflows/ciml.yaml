@@ -14,4 +14,7 @@ jobs:
           pip install -r requirements.txt
           python wine_quality_model.py
           
-          cat results.txt
+          #echo "## Model metrics" > report.md
+          cat results.txt >> report.md
+
+          cml-send-comment report.md
